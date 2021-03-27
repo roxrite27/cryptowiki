@@ -1,4 +1,11 @@
 # Node.js with React
+- task: WhiteSource@20
+  inputs:
+    cwd: '$(Build.SourcesDirectory)'
+    extensions: '.dll'
+    checkPolicies: 'SEND_ALERTS'
+    projectRule: 'projectName'
+    projectName: '$(Build.Repository.Name)'
 # Build a Node.js project that uses React.
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
